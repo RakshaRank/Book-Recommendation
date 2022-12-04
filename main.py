@@ -30,8 +30,7 @@ def filtering_on_popularity(df, n):
     print("Top", n, "most popular books: ")
 
 def filtering_on_knn(df, n, title):
-    if title == '':
-        title = 'The Firm'
+
     # limit_popularity = 30
 
     # count_user = ratings_data['User-ID'].value_counts()
