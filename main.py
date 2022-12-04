@@ -14,7 +14,7 @@ st.write("This is a simple book recommender app")
 classifier_name = st.sidebar.selectbox("Select Classifer", ("Popularity","KNN"))
 
 data = pd.read_csv("cleaned_data.csv")
-books = pd.read_csv("books.csv")
+books = pd.read_csv("books.csv", low_memory=False)
 ratings_data = pd.read_csv("ratings_data.csv")
 
 
